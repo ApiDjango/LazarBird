@@ -1,0 +1,86 @@
+object fmCalen: TfmCalen
+  Left = 525
+  Height = 265
+  Top = 244
+  Width = 336
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Date Time'
+  ClientHeight = 265
+  ClientWidth = 336
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object Calendar1: TCalendar
+    Left = 24
+    Height = 160
+    Top = 56
+    Width = 162
+    BorderSpacing.Around = 5
+    DateTime = 40354
+    TabOrder = 0
+  end
+  object bbOk: TBitBtn
+    Left = 168
+    Height = 30
+    Top = 235
+    Width = 75
+    Caption = '&OK'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bbOkClick
+    TabOrder = 1
+  end
+  object BitBtn3: TBitBtn
+    Left = 248
+    Height = 30
+    Top = 235
+    Width = 83
+    Cancel = True
+    Caption = 'Cancel'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 32
+    Top = 16
+    Width = 336
+    BevelOuter = bvNone
+    ClientHeight = 32
+    ClientWidth = 336
+    TabOrder = 3
+    object edTime: TEdit
+      Left = 26
+      Height = 32
+      Top = 0
+      Width = 191
+      Align = alLeft
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 0
+      Height = 32
+      Top = 0
+      Width = 26
+      Align = alLeft
+      Alignment = taCenter
+      Caption = 'Time'
+      ParentColor = False
+    end
+    object BitBtn1: TBitBtn
+      Left = 261
+      Height = 32
+      Top = 0
+      Width = 75
+      Align = alRight
+      Caption = 'Today'
+      OnClick = BitBtn1Click
+      TabOrder = 1
+    end
+  end
+end
